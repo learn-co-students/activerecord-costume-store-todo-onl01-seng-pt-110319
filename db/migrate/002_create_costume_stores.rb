@@ -8,8 +8,8 @@
       t.string :location
       t.string :costume_inventory
       t.integer :num_of_employees
-      t.string :open_or_closed
-      t.datetime :open_time
+      t.boolean :still_in_business
+      t.datetime :opening_time
       t.datetime :closing_time
     end
   end 
