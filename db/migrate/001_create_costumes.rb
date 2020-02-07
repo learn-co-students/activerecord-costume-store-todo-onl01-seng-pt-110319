@@ -1,4 +1,4 @@
-class CreateCostumes < ActiveRecords::Migrations
+class CreateCostumes < ActiveRecord::Migration[4.2]
   
   def change
     create_table :costumes do |t|
@@ -6,7 +6,7 @@ class CreateCostumes < ActiveRecords::Migrations
       t.float :price
       t.string :image_url
       t.integer :size
-      t.timestamp
+      t.timestamps
     end
   end 
   end
